@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-netlify';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -10,13 +10,9 @@ const config = {
 	kit: {
 		
 		adapter: adapter({
-			// default options are shown. On some platforms
-			// these options are set automatically — see below
-			pages: 'docs',
-			assets: 'docs',
-			fallback: undefined,
-			precompress: false,
-			strict: true
+			// will create a Netlify Edge Function using Deno-based
+			// rather than using standard Node-based functions
+			edge: true
 		})
 	}
 };
