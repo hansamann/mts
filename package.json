@@ -14,6 +14,7 @@
 		"@sveltejs/adapter-netlify": "^2.0.8",
 		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.20.4",
+		"@types/ical": "^0.8.2",
 		"autoprefixer": "^10.4.16",
 		"postcss": "^8.4.31",
 		"svelte": "^4.0.5",
@@ -25,6 +26,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"node-ical": "^0.16.1"
+		"@netlify/functions": "^2.3.0"
 	}
 }
