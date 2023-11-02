@@ -1,10 +1,11 @@
 
 
 import { json } from '@sveltejs/kit';
+import ical from '$lib/ical';
 
 /** @type {import('./$types').RequestHandler} */
 export async function GET() {
-    /*const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const raw = await fetch('https://calendar.google.com/calendar/ical/2274266366b1c3f4a2baf9b3a3fc4ca3f2224909ca49e61456a18a4043cafd76%40group.calendar.google.com/public/basic.ics').then(res => res.text())
     const data = ical.parseICS(raw);
 
@@ -26,6 +27,6 @@ export async function GET() {
       });
     
     return json({events})
-   */ 
-    return json({success:true})
+   
+    //return json({success:true})
 }
