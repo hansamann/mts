@@ -80,58 +80,82 @@
   </div>
 </nav>
 
-<div
-  class="bg-gradient-to-r from-orange-500 to-pink-500 lg:px-16 px-6 shadow-md grid lg:grid-cols-2 grid-cols-1 py-4 py-2"
->
-  <div class="text-black border-2 border-rose-600">
-    <p>Our next meetup is on {data.events[0].date} | {data.events[0].time} at {data.events[0].location}.
-  </p>
-  
-  </div>
-  <div class="text-black border-2 border-rose-600">
-    <img class="width-full" src="./techsauna.png" />
+<div class="bg-gradient-to-r from-orange-500 to-pink-500 lg:px-16 px-6 shadow-md py-4 pb-6">
+  <div class="lg:text-6xl md:text-5xl text-2xl text-white">
+    <img class="lg:float-right md:float-right sm:float-right lg:h-64 md:h-48 sm:h-28" src="./techsauna.png" />
+    <div class="">Our next meetup is on <span class="font-bold">{data.events[0].date}</span> at <span class="font-bold"> {data.events[0].time}</span>.
+    We meet at {data.events[0].location}.</div>
   </div>
 </div>
 
-<div class="bg-gradient-to-r to-blue-500 from-cyan-500 lg:px-16 px-6 shadow-md py-4 py-2">
+<div class="bg-gradient-to-r to-blue-500 from-cyan-500 lg:px-16 px-6 shadow-md py-2">
   <h4 class="text-3xl font-semibold text-blueGray-700">Next up for Munich Tech Sauna</h4>
+  <div class="mt-2 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3">
+    {#each data.events as event}
+    <div class="text-sm p-2 border-2 border-blue-300 rounded-md hover:bg-white">
+      <span class="font-bold">{event.date} at {event.time}</span> at 
+      {event.location}
+    </div>
+    {/each}
+  </div>
+</div>
 
+<div class="bg-gradient-to-r to-cyan-500 from-blue-500 lg:px-16 px-6 shadow-md py-4 py-2">
+  <h4 class="text-3xl font-semibold text-blueGray-700">Collect POAPs at each of our meetups!</h4>
+  <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3">
+  <div class="mt-2 text-sm">
+    If you want, you can 
+    preserve our amazing experiences with the help of the blockchain. 
+    At each meetup, you will 
+    receive a claim link which allows you to mint a special digital collectible for free.
+    To start collecting, we recommend to install 
+    <a href="https://www.coinbase.com/wallet">Coinbase Wallet</a>, but any Ethereum-based account will work.
+    
+  </div>
+  <div class="mt-2 text-sm">
+    
+    Next, simply come to the next event to start collecting. 
 
-
-<div class="mt-4 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3">
-  {#each data.events as event}
-  <div class="text-sm p-2 border-2 border-blue-300 rounded-md hover:bg-white">
-    <span class="font-bold">{event.date} at {event.time}</span> at 
-    {event.location}
+    You will receive a claim link which enables 
+    you to collect the <a class="hover:bg-white" href="https://poap.xyz/">POAP</a> after our sauna session.
+    Click on one of the <a href="https://poap.xyz/">POAPs</a>below to see the past meetup collectibles and 
+    all collectors as recorded on the blockchain. 
   </div>
 
-  {/each}
-
 </div>
+  <div class="mt-4 grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-3 justify-items-center">
+    {#each data.poaps as poap}
+    <div class="text-sm p-2">
+      <a href="https://poap.gallery/event/{poap.event.id}" target="_blank">
+        <img class="w-36 rounded-md shadow-md hover:scale-125" src="{poap.event.image_url}?size=small" />
+      </a>
+    </div>
+    {/each}
+  </div>
 </div>
 
 <div
   class="bg-gradient-to-r from-orange-500 to-pink-500 lg:px-16 px-6 shadow-md grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 py-4 py-2"
 >
-  <div class="text-white border-2 border-rose-600 p-2">
+  <div class="text-white p-2">
     <img class="rounded-md" src="./community.jpeg"/>
     <p class="text-xs text-center pb-4">Image by <a href="https://pixabay.com/users/henning_w-327613/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=386673">Henning Westerkamp</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=386673">Pixabay</a></p>
     The Munich Tech Sauna community is a unique gathering of tech enthusiasts in the beautiful city of Munich, Germany. We come together to unwind and connect, sharing the joy of saunas and great conversations. Our community values a tech-free environment, leaving gadgets and devices at the door, allowing us to focus on what truly matters: human connections.
   </div>
 
-  <div class="text-white border-2 border-rose-600 p-2">
+  <div class="text-white p-2">
     <img class="rounded-md" src="./diverse.jpeg"/>
     <p class="text-xs text-center pb-4">Image by <a href="https://pixabay.com/users/sergiovisor_ph-21747664/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6297317">Sergio Carabajal</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6297317">Pixabay</a></p>
     With a warm and inviting atmosphere, we welcome great people from all corners of the tech world who share our passion for relaxation and camaraderie. Our gatherings are characterized by an uplifting mood, where you can leave the stresses of the workday behind and immerse yourself in the soothing ambiance of the sauna.
   </div>
 
-  <div class="text-white border-2 border-rose-600 p-2">
+  <div class="text-white p-2">
     <img class="rounded-md" src="./beer.jpeg"/>
     <p class="text-xs text-center  pb-4">Image by <a href="https://pixabay.com/users/schilderschool-3992139/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1903068">Sasja Bork</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1903068">Pixabay</a></p>
     After a rejuvenating sauna session, we often come together for a well-deserved afterwork beer and chill. It's the perfect time to continue those meaningful discussions or simply relax in good company. We also explore various sauna infusions, enhancing the health benefits of the experience and deepening our appreciation for holistic wellness.
   </div>
 
-  <div class="text-white border-2 border-rose-600 p-2">
+  <div class="text-white p-2">
     <img class="rounded-md" src="./sauna.jpeg"/>
     <p class="text-xs text-center pb-4">Image by <a href="https://pixabay.com/users/estoniansaunas-8802688/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3350235">EstonianSaunas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3350235">Pixabay</a></p>
     Join the "Munich Tech Sauna" community to escape the digital hustle, meet like-minded individuals, and nurture your well-being in a friendly and communal setting. It's a place where tech and relaxation come together in harmony.
