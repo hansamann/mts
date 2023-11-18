@@ -82,7 +82,7 @@
 
 <div class="bg-gradient-to-r from-orange-500 to-pink-500 lg:px-16 px-6 shadow-md py-4 pb-6">
   <div class="lg:text-6xl md:text-5xl text-2xl text-white">
-    <img class="lg:float-right md:float-right sm:float-right lg:h-64 md:h-48 sm:h-28" src="./techsauna.png" />
+    <img class="lg:float-right md:float-right sm:float-right lg:h-56d md:h-48 sm:h-28" src="./techsauna.png" />
     <div class="">Our next meetup is on <span class="font-bold">{data.events[0].date}</span> at <span class="font-bold"> {data.events[0].time}</span>.
     We meet at {data.events[0].location}.</div>
   </div>
@@ -118,7 +118,7 @@
 
     You will receive a claim link which enables 
     you to collect the <a class="hover:bg-white" href="https://poap.xyz/">POAP</a> after our sauna session.
-    Click on one of the <a href="https://poap.xyz/">POAPs</a>below to see the past meetup collectibles and 
+    Click on one of the <a href="https://poap.xyz/">POAPs</a> below to see the past meetup collectibles and 
     all collectors as recorded on the blockchain. 
   </div>
 
