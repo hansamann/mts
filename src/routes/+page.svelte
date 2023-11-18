@@ -127,7 +127,7 @@
     {#each data.poaps as poap}
     <div class="text-sm p-2">
       <a href="https://poap.gallery/event/{poap.event.id}" target="_blank">
-        <img class="w-36 rounded-md shadow-md hover:scale-125" src="{poap.event.image_url}?size=small" />
+        <img class="w-36 rounded-md shadow-md" src="{poap.event.image_url}?size=small" />
       </a>
     </div>
     {/each}
