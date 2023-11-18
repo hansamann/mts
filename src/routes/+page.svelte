@@ -90,6 +90,18 @@
 
 <div class="bg-gradient-to-r to-blue-500 from-cyan-500 lg:px-16 px-6 shadow-md py-2">
   <h4 class="text-3xl font-semibold text-blueGray-700">Next up for Munich Tech Sauna</h4>
+  <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3">
+    <div class="mt-2 text-sm">
+      All upcoming meetups for the next year can be seen below, it's based on a <a class="text-white" href="https://calendar.google.com/calendar/embed?src=2274266366b1c3f4a2baf9b3a3fc4ca3f2224909ca49e61456a18a4043cafd76%40group.calendar.google.com&ctz=Europe%2FBerlin">public calendar</a> and you can also 
+      get it in <a class="text-white" href="https://calendar.google.com/calendar/ical/2274266366b1c3f4a2baf9b3a3fc4ca3f2224909ca49e61456a18a4043cafd76%40group.calendar.google.com/public/basic.ics">ical format</a>.
+      If you are new to our meetup, be sure to arrive on time to meet up in the entrance area where the tickets are bought.
+    </div>
+    <div class="mt-2 text-sm">
+      We typically meet monthly and around Munich, but sometimes we go to special saunas that are a bit further
+      out. If you join us, you will get to know the top sauna places in and around Munich!
+    </div>
+  
+  </div>
   <div class="mt-2 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3">
     {#each data.events as event}
     <div class="text-sm p-2 border-2 border-blue-300 rounded-md hover:bg-white">
@@ -109,7 +121,8 @@
     At each meetup, you will 
     receive a claim link which allows you to mint a special digital collectible for free.
     To start collecting, we recommend to install 
-    <a href="https://www.coinbase.com/wallet">Coinbase Wallet</a>, but any Ethereum-based account will work.
+    <a class="text-white" href="https://www.coinbase.com/wallet">Coinbase Wallet</a>, but any Ethereum-based account 
+    will of course work.
     
   </div>
   <div class="mt-2 text-sm">
@@ -117,8 +130,8 @@
     Next, simply come to the next event to start collecting. 
 
     You will receive a claim link which enables 
-    you to collect the <a class="hover:bg-white" href="https://poap.xyz/">POAP</a> after our sauna session.
-    Click on one of the <a href="https://poap.xyz/">POAPs</a> below to see the past meetup collectibles and 
+    you to collect the <a class="text-white" href="https://poap.xyz/">POAP</a> after our sauna session.
+    Click on one of the <a class="text-white" href="https://poap.xyz/">POAPs</a> below to see the past meetup collectibles and 
     all collectors as recorded on the blockchain. 
   </div>
 
@@ -127,7 +140,7 @@
     {#each data.poaps as poap}
     <div class="text-sm p-2">
       <a href="https://poap.gallery/event/{poap.event.id}" target="_blank">
-        <img class="w-36 rounded-md shadow-md" src="{poap.event.image_url}?size=small" />
+        <img class="w-36 rounded-md shadow-md hover:border-2 border-white" src="{poap.event.image_url}?size=small" />
       </a>
     </div>
     {/each}
