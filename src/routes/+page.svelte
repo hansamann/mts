@@ -158,13 +158,13 @@
 
   <div class="text-white p-2">
     <img class="rounded-md" src="./diverse.jpeg"/>
-    <p class="text-xs text-center pb-4">Image by <a href="https://pixabay.com/users/sergiovisor_ph-21747664/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6297317">Sergio Carabajal</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6297317">Pixabay</a></p>
+    <p class="text-xs text-center pb-4">Image by Sven Haiges</p>
     With a warm and inviting atmosphere, we welcome great people from all corners of the tech world who share our passion for relaxation and camaraderie. Our gatherings are characterized by an uplifting mood, where you can leave the stresses of the workday behind and immerse yourself in the soothing ambiance of the sauna.
   </div>
 
   <div class="text-white p-2">
     <img class="rounded-md" src="./beer.jpeg"/>
-    <p class="text-xs text-center  pb-4">Image by <a href="https://pixabay.com/users/schilderschool-3992139/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1903068">Sasja Bork</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1903068">Pixabay</a></p>
+    <p class="text-xs text-center  pb-4">Image by Sven Haiges</p>
     After a rejuvenating sauna session, we often come together for a well-deserved afterwork beer and chill. It's the perfect time to continue those meaningful discussions or simply relax in good company. We also explore various sauna infusions, enhancing the health benefits of the experience and deepening our appreciation for holistic wellness.
   </div>
 
