@@ -11,6 +11,9 @@ export async function load() {
         if (data.hasOwnProperty(k)) {
             const ev = data[k];
             if (data[k].type == 'VEVENT') {
+
+                //console.log('offset', ev.start.toLocaleTimeString(), ev.start.getTimezoneOffset());
+                ev.start = new Date(ev.start.getTime() + 60*60*1000)
                 events[events.length] = {start:new Date(ev.start) ,summary:ev.summary, location:ev.location, date:`${months[ev.start.getMonth()]} ${ev.start.getDate()}`, time:`${ev.start.toLocaleTimeString('de-DE', { hour: "2-digit", minute: "2-digit" })}`}
                 //`${ev.summary} is in ${ev.location} on the ${ev.start.getDate()} of ${months[ev.start.getMonth()]} at ${ev.start.toLocaleTimeString('en-GB', { hour: "2-digit", minute: "2-digit" })}`);
             }
