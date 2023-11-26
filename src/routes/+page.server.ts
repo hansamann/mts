@@ -20,7 +20,7 @@ export async function load() {
 
                 //console.log(ev.summary, ev.start.toString(), ev.start.getTimezoneOffset());
                 ev.start = new Date(ev.start.getTime() + 60*60*1000)
-                if (isDST(ev.start))
+                if (ev.start.getMonth() > 3 && ev.start.getMonth() < 10)
                 {
                     ev.start = new Date(ev.start.getTime() + 60*60*1000)
                 }
