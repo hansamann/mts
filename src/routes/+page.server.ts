@@ -1,5 +1,11 @@
 import ical from '$lib/ical';
 
+function isDST(d) {
+    let jan = new Date(d.getFullYear(), 0, 1).getTimezoneOffset();
+    let jul = new Date(d.getFullYear(), 6, 1).getTimezoneOffset();
+    return Math.max(jan, jul) !== d.getTimezoneOffset();    
+}
+
 export async function load() {
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const raw = await fetch('https://calendar.google.com/calendar/ical/2274266366b1c3f4a2baf9b3a3fc4ca3f2224909ca49e61456a18a4043cafd76%40group.calendar.google.com/public/basic.ics').then(res => res.text())
@@ -12,10 +18,13 @@ export async function load() {
             const ev = data[k];
             if (data[k].type == 'VEVENT') {
 
-                console.log(ev.summary, ev.start.toString(), ev.start.getTimezoneOffset());
-                const multi = Math.floor(ev.start.getTimezoneOffset() / -60)
-                ev.start = new Date(ev.start.getTime() + 60*60*1000 * multi)
-                //add another hour from 
+                //console.log(ev.summary, ev.start.toString(), ev.start.getTimezoneOffset());
+                ev.start = new Date(ev.start.getTime() + 60*60*1000)
+                if (isDST(ev.start))
+                {
+                    ev.start = new Date(ev.start.getTime() + 60*60*1000)
+                }
+                
                 events[events.length] = {start:new Date(ev.start) ,summary:ev.summary, location:ev.location, date:`${months[ev.start.getMonth()]} ${ev.start.getDate()}`, time:`${ev.start.toLocaleTimeString('de-DE', { hour: "2-digit", minute: "2-digit" })}`}
                 //`${ev.summary} is in ${ev.location} on the ${ev.start.getDate()} of ${months[ev.start.getMonth()]} at ${ev.start.toLocaleTimeString('en-GB', { hour: "2-digit", minute: "2-digit" })}`);
             }
