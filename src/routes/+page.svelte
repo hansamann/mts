@@ -75,6 +75,14 @@
             Reddit
           </a>
         </li>
+        <li class="py-2 lg:py-0">
+          <a
+            class="text-white hover:pb-4 hover:border-b-4 hover:border-white"
+            href="https://buttondown.email/techsauna"
+          >
+            Newsletter
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
