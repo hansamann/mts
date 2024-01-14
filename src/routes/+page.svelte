@@ -113,7 +113,7 @@
     <p class="mt-2">Munich Tech Sauna meetups are not co-organized with the public saunas that we go to.  For enforcement of this Code of Conduct, we only have official authority of the online spaces (Discord, Reddit, Lemmy, etc.) we are using for communication and the activities we organise. With everything else, we will try to work on enforcement with the sauna staff and local authorities. The saunas we go to are spaces used by non-participants as well, please don’t assume that everyone has read or will follow this Code of Conduct. This Code of Conduct applies to our meetups, activities, and to all digital spaces that are related to Munich Tech Sauna, such as GitHub, Discord, Matrix, Reddit and Mastodon.</p>
 
     <h1 class="font-black text-xl my-2">Attribution</h1>
-    <p>This Code of Conduct is adapted from [dev.to](https://dev.to/code-of-conduct). We also got inspired and adapted a lot from [codefreeze.fi](https://codefreeze.fi/) and [SoCraTes](https://www.socrates-conference.de). Thx all!</p>
+    <p>This Code of Conduct is adapted from <a href="https://dev.to/code-of-conduct">dev.to</a>. We also got inspired and adapted a lot from <a href="https://codefreeze.fi/">codefreeze.fi</a> and <a href="https://www.socrates-conference.de">SoCraTes</a>. Thx all!</p>
   </div>
 
   <div class="text-black p-2">
