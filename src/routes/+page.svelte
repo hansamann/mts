@@ -1,5 +1,14 @@
 <script>
  export let data;
+ let showCode = false;
+
+ const log = console.log;
+
+ function toggleCode() {
+  showCode = !showCode;
+  log(`Showing code of conduct? ${showCode}`)
+
+ }
 </script>
 
 <nav
@@ -83,10 +92,96 @@
             Newsletter
           </a>
         </li>
+        <li class="py-2 lg:py-0">
+          <a
+            class="text-white hover:pb-4 hover:border-b-4 hover:border-white"
+            on:click="{toggleCode}"
+            href="#"
+          >
+            Code of Conduct
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
 </nav>
+
+<div
+  class="{(showCode)? '' : 'hidden'} bg-gradient-to-r from-slate-200 to-slate-400 lg:px-16 px-6 shadow-md grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 py-4 py-2"
+>
+  <div class="text-black p-2">
+    <h1 class="font-black text-xl my-2">Code of Conduct</h1>
+    <p>All participants of Munich Tech Sauna are expected to abide by our Code of Conduct, both online and during in-person events that are hosted and/or associated with Munich Tech Sauna.</p>
+    <p class="mt-2">Munich Tech Sauna meetups are not co-organized with the public saunas that we go to.  For enforcement of this Code of Conduct, we only have official authority of the online spaces (Discord, Reddit, Lemmy, etc.) we are using for communication and the activities we organise. With everything else, we will try to work on enforcement with the sauna staff and local authorities. The saunas we go to are spaces used by non-participants as well, please don’t assume that everyone has read or will follow this Code of Conduct. This Code of Conduct applies to our meetups, activities, and to all digital spaces that are related to Munich Tech Sauna, such as GitHub, Discord, Matrix, Reddit and Mastodon.</p>
+
+    <h1 class="font-black text-xl my-2">Attribution</h1>
+    <p>This Code of Conduct is adapted from [dev.to](https://dev.to/code-of-conduct). We also got inspired and adapted a lot from [codefreeze.fi](https://codefreeze.fi/) and [SoCraTes](https://www.socrates-conference.de). Thx all!</p>
+  </div>
+
+  <div class="text-black p-2">
+    <h1 class="font-black text-xl my-2">Why we have a Code of Conduct</h1>
+    <p>Our goal is to organize casual gatherings where everyone can engage in learning, teaching, sharing, networking, and enjoying themselves. Achieving this requires inclusivity for all participants and the establishment of a welcoming and secure environment. We appreciate open discussions and even disagreements, acknowledging that they may become intense. To maintain a positive atmosphere, we have established rules and set clear boundaries, outlined in this Code of Conduct.</p>
+    <h1 class="font-black text-xl my-2">General (German) Sauna Rules</h1>
+    <ul class="list-disc">
+      <li><span class="font-bold">No sweat on  wood</span> Bring a large towel and if you like to cover your body bring a second towel so your feet do not touch the bench.</li>
+      <li><span class="font-bold">Respect quiet infusions</span> During the infusions, it's advised to stay calm and refrain from conversations. You can talk again once we exit the sauna and hang out in the community areas. </li>
+      <li><span class="font-bold">No gadgets</span>  The sauna rules in many places prohibit the use of electronic devices with cameras - let's respect this for the privacy of all of us.</li>
+    </ul>
+  </div>
+
+  <div class="text-black p-2">
+    <h1 class="font-black text-xl my-2">The pledge</h1>
+    <p>In the interest of fostering an open and welcoming environment, we pledge to make participation in our meetups, activities and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.</p>
+    <h1 class="font-black text-xl my-2">A Safe Environment</h1>
+    <p class="font-bold">Examples of behaviour that contributes to creating a positive & safe environment include:</p>
+    <ul class="list-disc">
+      <li> Using welcoming and <span class="font-bold">inclusive language</span></li>
+      <li> Being <span class="font-bold">respectful</span> of differing viewpoints and experiences</li>
+      <li>Gracefully accepting <span class="font-bold">constructive criticism</span></li>
+      <li>Referring to people by their <span class="font-bold">preferred pronouns</span> and using gender-neutral pronouns when uncertain</li>
+      <li><span class="font-bold">Admit when you do not know something.</span>  Encourage others to admit when they do not know something—and never joke about it. We are all here to learn.</li>
+      <li><span class="font-bold">Be careful with jokes.</span> We do not tolerate any CoC violations, even if “it was just a joke”.</li>
+    </ul>
+      <p class="my-2 font-bold">Examples of unacceptable behaviour by participants include:</p>
+    <ul class="list-disc"> 
+      <li>Trolling, insulting/derogatory comments, public or private harassment</li>
+      <li>Publishing others' private information, such as a physical or electronic address, without explicit permission</li>
+      <li>Not being respectful to reasonable communication boundaries, such as 'please leave me alone,' 'please go away,' or 'I'm sorry, I’m not discussing this with you.'</li>
+      <li>The usage of sexualised language or imagery and unwelcome sexual attention or advances</li>
+      <li>Swearing, usage of strong or disturbing language</li>
+      <li>Demonstrating the graphics or any other content you know may be considered disturbing</li>
+      <li>Starting and/or participating in arguments related to politics</li>
+      <li>Assuming or promoting any kind of inequality including but not limited to: age, body size, disability, ethnicity, gender identity and expression, nationality and race, personal appearance, religion, or sexual identity and orientation</li>
+      <li>Drug promotion of any kind</li>
+      <li>Attacking personal tastes</li>
+      <li>Other conduct which you know could reasonably be considered inappropriate in a professional setting.</li>
+    </ul>
+    
+  </div>
+
+  <div class="text-black p-2">
+    <h1 class="font-black text-xl my-2">Enforcement & Violations</h1>
+    <p>If you think someone has violated our code of conduct—even if you were not directly involved, like you just overheard a conversation—please:</p>
+    <ul class="list-disc my-2">
+    <li>Let the person know that what they did is not appropriate and ask them to stop.</li>
+    <li>Contact the organisers of Munich Tech Sauna (See contact details below).</li>
+    </ul>
+    <p class="my-2">But please give people the benefit of doubt. If there is even a slight chance that this was a misunderstanding (e.g. the person did not speak in their native language, and did not find the right words), try to sort it out in a friendly, constructive way.</p>
+    
+    <p class="my-2">Violations of the Code of Conduct may be reported by sending an email to <a class="text-blue-800 hover:bg-blue-200" href="#">TBD (she/her)</a> and/or <a class="text-blue-800 hover:bg-blue-200" href="mailto:5ozek04u@duck.com">Sven Haiges (he/him)</a>. All reports will be reviewed and investigated. We will hear both sides and then take action we deem appropriate such as:</p>
+    <ul class="list-disc">
+    <li>Give a warning</li>
+    <li>Have a longer talk about our values</li>
+    <li>Exclude the perpetrator from the current and/or future meetups</li>
+    <li>Remove / block the perpetrator from our online communities</li>
+    <li>Call the authorities</li>
+  </ul>
+    
+    <p>We hold the right and responsibility to remove comments or other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any members for other behaviours that they deem inappropriate, threatening, offensive, or harmful.</p>
+    
+  </div>
+  
+</div>
 
 <div class="bg-gradient-to-r from-orange-500 to-pink-500 lg:px-16 px-6 shadow-md py-4 pb-6">
   <div class="lg:text-6xl md:text-5xl text-2xl text-white">
