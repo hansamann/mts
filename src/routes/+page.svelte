@@ -53,12 +53,10 @@
           </a>
         </li>
         <li class="py-2 lg:py-0">
-          <a
-            class="text-white hover:pb-4 hover:border-b-4 hover:border-white"
-            href="https://muenchen.social/invite/Ygp4Uheb"
-          >
+          <a rel="me" class="text-white hover:pb-4 hover:border-b-4 hover:border-white" href="https://discuss.systems/@techsauna">
             Mastodon
           </a>
+
         </li>
         <li class="py-2 lg:py-0">
           <a
@@ -294,3 +292,5 @@
     display: block;
   }
 </style>
+
+
