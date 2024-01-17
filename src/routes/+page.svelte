@@ -148,7 +148,7 @@
       <li>The usage of sexualised language or imagery and unwelcome sexual attention or advances</li>
       <li>Swearing, usage of strong or disturbing language</li>
       <li>Demonstrating the graphics or any other content you know may be considered disturbing</li>
-      <li>Starting and/or participating in arguments related to politics</li>
+      <li>We're a non-political community and strive to limit political discussions. Yet, our goal is to foster inclusivity, endorsing democratic and inclusive movements without promoting specific parties.</li>
       <li>Assuming or promoting any kind of inequality including but not limited to: age, body size, disability, ethnicity, gender identity and expression, nationality and race, personal appearance, religion, or sexual identity and orientation</li>
       <li>Drug promotion of any kind</li>
       <li>Attacking personal tastes</li>
