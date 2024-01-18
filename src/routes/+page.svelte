@@ -129,7 +129,7 @@
 
   <div class="text-black p-2">
     <h1 class="font-black text-xl my-2">The pledge</h1>
-    <p>In the interest of fostering an open and welcoming environment, we pledge to make participation in our meetups, activities and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.</p>
+    <p>In the interest of fostering an open and welcoming environment, we pledge to make participation in our meetups, activities and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation. All creatures welcome! </p>
     <h1 class="font-black text-xl my-2">A Safe Environment</h1>
     <p class="font-bold">Examples of behaviour that contributes to creating a positive & safe environment include:</p>
     <ul class="list-disc">
@@ -148,7 +148,7 @@
       <li>The usage of sexualised language or imagery and unwelcome sexual attention or advances</li>
       <li>Swearing, usage of strong or disturbing language</li>
       <li>Demonstrating the graphics or any other content you know may be considered disturbing</li>
-      <li>We're a non-political community and strive to limit political discussions. Yet, our goal is to foster inclusivity, endorsing democratic and inclusive movements without promoting specific parties.</li>
+      <li> Initiating or endorsing political conversations that deviate from our inclusive or democratic principles.</li>
       <li>Assuming or promoting any kind of inequality including but not limited to: age, body size, disability, ethnicity, gender identity and expression, nationality and race, personal appearance, religion, or sexual identity and orientation</li>
       <li>Drug promotion of any kind</li>
       <li>Attacking personal tastes</li>
