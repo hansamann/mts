@@ -110,37 +110,39 @@
   <div class="text-black p-2">
     <h1 class="font-black text-xl my-2">Code of Conduct</h1>
     <p>All participants of Munich Tech Sauna are expected to abide by our Code of Conduct, both online and during in-person events that are hosted and/or associated with Munich Tech Sauna.</p>
-    <p class="mt-2">Munich Tech Sauna meetups are not co-organized with the public saunas that we go to.  For enforcement of this Code of Conduct, we only have official authority of the online spaces (Discord, Reddit, Lemmy, etc.) we are using for communication and the activities we organise. With everything else, we will try to work on enforcement with the sauna staff and local authorities. The saunas we go to are spaces used by non-participants as well, please don’t assume that everyone has read or will follow this Code of Conduct. This Code of Conduct applies to our meetups, activities, and to all digital spaces that are related to Munich Tech Sauna, such as GitHub, Discord, Matrix, Reddit and Mastodon.</p>
+    <p class="mt-2">Munich Tech Sauna meetups are not co-organized with the public saunas that we go to.  For enforcement of this Code of Conduct, we only have official authority of the online spaces we are using for communication and the activities we organise. With everything else, we will try to work on enforcement with the sauna staff and local authorities. The saunas we go to are spaces used by non-participants as well, please don’t assume that everyone has read or will follow this Code of Conduct.</p>
 
     <h1 class="font-black text-xl my-2">Attribution</h1>
     <p>This Code of Conduct is adapted from <a href="https://dev.to/code-of-conduct">dev.to</a>. We also got inspired and adapted a lot from <a href="https://codefreeze.fi/">codefreeze.fi</a> and <a href="https://www.socrates-conference.de">SoCraTes</a>. Thx all!</p>
+    <h1 class="font-black text-xl my-2">Why we have a Code of Conduct</h1>
+    <p>Our goal is to organize casual gatherings where everyone can engage in learning, teaching, sharing, networking, and enjoying themselves. Achieving this requires inclusivity for all participants and the establishment of a welcoming and secure environment. We appreciate open discussions and even disagreements, acknowledging that they may become intense. To maintain a positive atmosphere, we have established rules and set clear boundaries, outlined in this Code of Conduct.</p>
+  
   </div>
 
   <div class="text-black p-2">
-    <h1 class="font-black text-xl my-2">Why we have a Code of Conduct</h1>
-    <p>Our goal is to organize casual gatherings where everyone can engage in learning, teaching, sharing, networking, and enjoying themselves. Achieving this requires inclusivity for all participants and the establishment of a welcoming and secure environment. We appreciate open discussions and even disagreements, acknowledging that they may become intense. To maintain a positive atmosphere, we have established rules and set clear boundaries, outlined in this Code of Conduct.</p>
+    
     <h1 class="font-black text-xl my-2">General (German) Sauna Rules</h1>
     <ul class="list-disc">
       <li><span class="font-bold">No sweat on  wood</span> Bring a large towel and if you like to cover your body bring a second towel so your feet do not touch the bench.</li>
       <li><span class="font-bold">Respect quiet infusions</span> During the infusions, it's advised to stay calm and refrain from conversations. You can talk again once we exit the sauna and hang out in the community areas. </li>
       <li><span class="font-bold">No gadgets</span>  The sauna rules in many places prohibit the use of electronic devices with cameras - let's respect this for the privacy of all of us.</li>
     </ul>
-  </div>
-
-  <div class="text-black p-2">
     <h1 class="font-black text-xl my-2">The pledge</h1>
-    <p>In the interest of fostering an open and welcoming environment, we pledge to make participation in our meetups, activities and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation. All creatures welcome! </p>
+    <p>In the interest of fostering an open and welcoming environment, we pledge to make participation in our meetups, activities and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.</p>
     <h1 class="font-black text-xl my-2">A Safe Environment</h1>
-    <p class="font-bold">Examples of behaviour that contributes to creating a positive & safe environment include:</p>
+    <p >We aim to create a safe environment by:</p>
     <ul class="list-disc">
-      <li> Using welcoming and <span class="font-bold">inclusive language</span></li>
-      <li> Being <span class="font-bold">respectful</span> of differing viewpoints and experiences</li>
+      <li>Using welcoming and <span class="font-bold">inclusive language</span></li>
+      <li>Being <span class="font-bold">respectful</span> of differing viewpoints and experiences</li>
       <li>Gracefully accepting <span class="font-bold">constructive criticism</span></li>
       <li>Referring to people by their <span class="font-bold">preferred pronouns</span> and using gender-neutral pronouns when uncertain</li>
       <li><span class="font-bold">Admit when you do not know something.</span>  Encourage others to admit when they do not know something—and never joke about it. We are all here to learn.</li>
       <li><span class="font-bold">Be careful with jokes.</span> We do not tolerate any CoC violations, even if “it was just a joke”.</li>
     </ul>
-      <p class="my-2 font-bold">Examples of unacceptable behaviour by participants include:</p>
+  </div>
+
+  <div class="text-black p-2">
+      <p>Examples of <strong>unacceptable</strong> behaviour include:</p>
     <ul class="list-disc"> 
       <li>Trolling, insulting/derogatory comments, public or private harassment</li>
       <li>Publishing others' private information, such as a physical or electronic address, without explicit permission</li>
@@ -150,7 +152,6 @@
       <li>Demonstrating the graphics or any other content you know may be considered disturbing</li>
       <li> Initiating or endorsing political conversations that deviate from our inclusive or democratic principles.</li>
       <li>Assuming or promoting any kind of inequality including but not limited to: age, body size, disability, ethnicity, gender identity and expression, nationality and race, personal appearance, religion, or sexual identity and orientation</li>
-      <li>Drug promotion of any kind</li>
       <li>Attacking personal tastes</li>
       <li>Other conduct which you know could reasonably be considered inappropriate in a professional setting.</li>
     </ul>
