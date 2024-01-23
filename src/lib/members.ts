@@ -21,6 +21,14 @@ export function loadMembers(): Member[] {
             github: 'https://github.com/hansamann',
             matrix: 'https://matrix.to/#/@hansamann19:matrix.org'
         },
+        {
+            name: 'Alan Kochev',
+            pronouns: 'he/him/his',
+            img: '/members/alaija.png',
+            linkedin: 'https://linkedin.com/in/alaija',
+            mastodon: 'https://mas.to/@alaija',
+            github: 'https://github.com/alaija'
+        },
         /*
          * To add yourself, copy the aboze block as an example and paste it below.
          * Then, change the values to your own. Keep in mind LinkedIn is required, as well as name, 
