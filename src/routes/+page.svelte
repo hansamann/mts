@@ -235,7 +235,7 @@
     {#each data.members as member}
     <div class="text-sm p-2">
       <a href="{member.linkedin}" target="_blank">
-        <div style="display: flex; justify-content: center; align-items: center;"><img class="w-36 rounded-full shadow-md border-white" src="{member.img}" /></div>
+        <div class="flex justify-center"><img class="w-36 rounded-full shadow-md border-white" src="{member.img}" /></div>
         <div class="text-center mt-2 text-base">{member.name} ({member.pronouns})</div>
         <div class="text-center">
           {#if member.linkedin}
