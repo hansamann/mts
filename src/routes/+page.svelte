@@ -214,6 +214,54 @@
   </div>
 </div>
 
+
+<div class="bg-gradient-to-r from-pink-500 to-orange-500 lg:px-16 px-6 shadow-md py-4 py-2">
+  <h4 class="text-3xl font-semibold text-blueGray-700">Our members</h4>
+  <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3">
+  <div class="mt-2 text-sm">
+    Below you see some of our members that chose to be shown here on our website. We are a diverse group of people from all walks of life. 
+    If you follow the social media links, you can get to know us even better and connect on other platforms. Keep in mind that only 
+    a subset of our members chose to be listed below, so you will meet even more and often different people at our meetups.
+    
+  </div>
+  <div class="mt-2 text-sm">
+    If you want to add yourself, clone our <a href="https://github.com/hansamann/mts">github repo</a> and make changes to the `src/lib/members.ts` file - there are instructions in there 
+    and it's pretty easy. Then create a pull request and we will merge it. If you have trouble with this, just send us the JSON for your 
+    profile to 1a10pes6@duck.com and we will add it for you.
+  </div>
+
+</div>
+  <div class="mt-4 grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-3 justify-items-center">
+    {#each data.members as member}
+    <div class="text-sm p-2">
+      <a href="{member.linkedin}" target="_blank">
+        <div><img class="w-36 rounded-full shadow-md border-white" src="{member.img}" /></div>
+        <div class="text-center mt-2 text-base">{member.name} ({member.pronouns})</div>
+        <div class="text-center">
+          {#if member.linkedin}
+            <a href="{member.linkedin}" target="_blank"><svg class="inline h-6 hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+          {/if}
+
+          {#if member.github}
+            <a href="{member.github}" target="_blank"><svg class="inline h-6 hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+          {/if}
+
+          {#if member.mastodon}
+            <a href="{member.mastodon}" target="_blank"><svg class="inline h-6 hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54a102.5 102.5 0 0 1 -.9-13.9c85.6 20.9 158.7 9.1 178.8 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.3V197c0-58.5-64-56.6-64-6.9v114.2H90.2c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175z"/></svg></a>
+          {/if}
+
+
+          {#if member.matrix}
+            <a href="{member.matrix}" target="_blank"><span class="inline h-6 hover:text-white font-bold text-lg">[m]</span></a>
+          {/if}
+
+        </div>
+      </a>
+    </div>
+    {/each}
+  </div>
+</div>
+
 <div class="bg-gradient-to-r to-cyan-500 from-blue-500 lg:px-16 px-6 shadow-md py-4 py-2">
   <h4 class="text-3xl font-semibold text-blueGray-700">Collect POAPs at each of our meetups!</h4>
   <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3">
