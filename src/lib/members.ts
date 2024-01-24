@@ -29,6 +29,14 @@ export function loadMembers(): Member[] {
             mastodon: 'https://mas.to/@alaija',
             github: 'https://github.com/alaija'
         },
+        {
+            name: 'Maximilian Lenner',
+            pronouns: 'he/him/his',
+            img: '/members/lenner.png',
+            linkedin: 'https://www.linkedin.com/in/maximilian-lenner/',
+            mastodon: 'https://chaos.social/@LaxMenner',
+            github: 'https://github.com/LaxMenner'  
+        },
         /*
          * To add yourself, copy the aboze block as an example and paste it below.
          * Then, change the values to your own. Keep in mind LinkedIn is required, as well as name, 
