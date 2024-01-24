@@ -22,6 +22,13 @@ export function loadMembers(): Member[] {
             matrix: 'https://matrix.to/#/@hansamann19:matrix.org'
         },
         {
+            name: 'Andreas Neumeier',
+            pronouns: 'he/him/his',
+            linkedin: 'https://www.linkedin.com/in/andreasofthings',
+            mastodon: 'https://mastodon.social/@andreasofthings',
+            img: '/members/user.png'
+        },
+        {
             name: 'Alan Kochev',
             pronouns: 'he/him/his',
             img: '/members/alaija.png',
