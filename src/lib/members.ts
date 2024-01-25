@@ -26,6 +26,8 @@ export function loadMembers(): Member[] {
             pronouns: 'he/him/his',
             linkedin: 'https://www.linkedin.com/in/andreasofthings',
             mastodon: 'https://mastodon.social/@andreasofthings',
+            github: 'https://github.com/andreasofthings',
+            matrix: 'https://matrix.to/#/@andreas:pramari.de',
             img: '/members/user.png'
         },
         {
