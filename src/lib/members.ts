@@ -28,7 +28,7 @@ export function loadMembers(): Member[] {
             mastodon: 'https://mastodon.social/@andreasofthings',
             github: 'https://github.com/andreasofthings',
             matrix: 'https://matrix.to/#/@andreas:pramari.de',
-            img: '/members/user.png'
+            img: '/members/andreas.jpeg'
         },
         {
             name: 'Alan Kochev',
