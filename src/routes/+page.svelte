@@ -4,7 +4,6 @@
 
  const log = console.log;
  
-
  function toggleCode() {
   showCode = !showCode;
   log(`Showing code of conduct? ${showCode}`)
