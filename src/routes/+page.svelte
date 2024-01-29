@@ -163,11 +163,11 @@
     <p>If you think someone has violated our code of conduct—even if you were not directly involved, like you just overheard a conversation—please:</p>
     <ul class="list-disc my-2">
     <li>Let the person know that what they did is not appropriate and ask them to stop.</li>
-    <li>Contact the organisers of Munich Tech Sauna (See contact details below).</li>
+    <li>Contact the organiser of Munich Tech Sauna (see contact details below).</li>
     </ul>
     <p class="my-2">But please give people the benefit of doubt. If there is even a slight chance that this was a misunderstanding (e.g. the person did not speak in their native language, and did not find the right words), try to sort it out in a friendly, constructive way.</p>
     
-    <p class="my-2">Violations of the Code of Conduct may be reported by sending an email to <a class="text-blue-800 hover:bg-blue-200" href="#">TBD (she/her)</a> and/or <a class="text-blue-800 hover:bg-blue-200" href="mailto:5ozek04u@duck.com">Sven Haiges (he/him)</a>. All reports will be reviewed and investigated. We will hear both sides and then take action we deem appropriate such as:</p>
+    <p class="my-2">Violations of the Code of Conduct may be reported by sending an email to  the organiser <a class="text-blue-800 hover:bg-blue-200" href="mailto:5ozek04u@duck.com">Sven Haiges (he/him)</a> or our member <a class="text-blue-800 hover:bg-blue-200" href="mailto:lbauer@magenta.de">Lena Bauer (she/her)</a>. All reports will be reviewed and investigated. We will hear both sides and then take action we deem appropriate such as:</p>
     <ul class="list-disc">
     <li>Give a warning</li>
     <li>Have a longer talk about our values</li>
