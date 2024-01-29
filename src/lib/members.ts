@@ -22,12 +22,27 @@ export function loadMembers(): Member[] {
             matrix: 'https://matrix.to/#/@hansamann19:matrix.org'
         },
         {
+            name: 'Andreas Neumeier',
+            pronouns: 'he/him/his',
+            linkedin: 'https://www.linkedin.com/in/andreasofthings',
+            mastodon: 'https://mastodon.social/@andreasofthings',
+            img: '/members/user.png'
+        },
+        {
             name: 'Alan Kochev',
             pronouns: 'he/him/his',
             img: '/members/alaija.png',
             linkedin: 'https://linkedin.com/in/alaija',
             mastodon: 'https://mas.to/@alaija',
             github: 'https://github.com/alaija'
+        },
+        {
+            name: 'Maximilian Lenner',
+            pronouns: 'he/him/his',
+            img: '/members/lenner.png',
+            linkedin: 'https://www.linkedin.com/in/maximilian-lenner/',
+            mastodon: 'https://chaos.social/@LaxMenner',
+            github: 'https://github.com/LaxMenner'  
         },
         /*
          * To add yourself, copy the aboze block as an example and paste it below.
