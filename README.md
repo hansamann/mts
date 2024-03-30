@@ -6,6 +6,7 @@ https://calendar.google.com/calendar/ical/2274266366b1c3f4a2baf9b3a3fc4ca3f22249
 Auto Cal 2024
 
 
+
 ## POAP API
 `https://documentation.poap.tech/reference/postactionsclaim-delivery-v2`
 `https://documentation.poap.tech/reference/getactionsscan-5
