@@ -160,37 +160,51 @@
   
 </div>
 
-<div class="bg-gradient-to-r from-orange-500 to-pink-500 lg:px-16 px-6 shadow-md py-4 pb-6">
-  <div class="lg:text-6xl md:text-5xl text-2xl text-white">
-    <img class="lg:float-right md:float-right sm:float-right lg:h-56d md:h-48 sm:h-28" src="./techsauna.png" />
-    <div class="">Our next meetup is on <span class="font-bold">{data.events[0].date}</span> at <span class="font-bold"> {data.events[0].time}</span>.
-    We meet at {data.events[0].location}.</div>
+<div
+  class="bg-gradient-to-r from-orange-500 to-pink-500 lg:px-16 px-6 shadow-md grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 py-4 py-2"
+>
+  <div class="text-white p-2">
+    <img class="rounded-md" src="./community.jpeg"/>
+    <p class="text-xs text-center pb-4">Image by <a href="https://pixabay.com/users/henning_w-327613/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=386673">Henning Westerkamp</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=386673">Pixabay</a></p>
+    The Munich Tech Sauna community is a unique gathering of tech enthusiasts in the beautiful city of Munich, Germany. We come together to unwind and connect, sharing the joy of saunas and great conversations. Our community values a tech-free environment, leaving gadgets and devices at the door, allowing us to focus on what truly matters: human connections.
   </div>
+
+  <div class="text-white p-2">
+    <img class="rounded-md" src="./diverse.jpeg"/>
+    <p class="text-xs text-center pb-4">Image by Sven Haiges</p>
+    With a warm and inviting atmosphere, we welcome great people from all corners of the tech world who share our passion for relaxation and camaraderie. Our gatherings are characterized by an uplifting mood, where you can leave the stresses of the workday behind and immerse yourself in the soothing ambiance of the sauna.
+  </div>
+
+  <div class="text-white p-2">
+    <img class="rounded-md" src="./beer.jpeg"/>
+    <p class="text-xs text-center  pb-4">Image by Sven Haiges</p>
+    After a rejuvenating sauna session, we often come together for a well-deserved afterwork beer and chill. It's the perfect time to continue those meaningful discussions or simply relax in good company. We also explore various sauna infusions, enhancing the health benefits of the experience and deepening our appreciation for holistic wellness.
+  </div>
+
+  <div class="text-white p-2">
+    <img class="rounded-md" src="./sauna.jpeg"/>
+    <p class="text-xs text-center pb-4">Image by <a href="https://pixabay.com/users/estoniansaunas-8802688/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3350235">EstonianSaunas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3350235">Pixabay</a></p>
+    Join the "Munich Tech Sauna" community to escape the digital hustle, meet like-minded individuals, and nurture your well-being in a friendly and communal setting. It's a place where tech and relaxation come together in harmony.
+
+  </div>
+  
 </div>
 
-<div class="bg-gradient-to-r to-blue-500 from-cyan-500 lg:px-16 px-6 shadow-md py-2">
-  <h4 class="text-3xl font-semibold text-blueGray-700">Next up for Munich Tech Sauna</h4>
-  <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3">
-    <div class="mt-2 text-sm">
-      All upcoming meetups for the next year can be seen below, it's based on a <a class="text-white" href="https://calendar.google.com/calendar/embed?src=2274266366b1c3f4a2baf9b3a3fc4ca3f2224909ca49e61456a18a4043cafd76%40group.calendar.google.com&ctz=Europe%2FBerlin">public calendar</a> and you can also 
-      get it in <a class="text-white" href="https://calendar.google.com/calendar/ical/2274266366b1c3f4a2baf9b3a3fc4ca3f2224909ca49e61456a18a4043cafd76%40group.calendar.google.com/public/basic.ics">ical format</a>.
-      If you are new to our meetup, be sure to arrive on time to meet up in the entrance area where the tickets are bought.
-    </div>
-    <div class="mt-2 text-sm">
-      We typically meet monthly and around Munich, but sometimes we go to special saunas that are a bit further
-      out. If you join us, you will get to know the top sauna places in and around Munich!
-    </div>
+<div class="">
+    <iframe
+      src="https://lu.ma/embed/calendar/cal-6K0AaZr12PW4uBL/events?"
+      width="100%"
+      height="500"
+      frameborder="0"
+      style=""
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0"
+    ></iframe>
+
   
-  </div>
-  <div class="mt-2 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3">
-    {#each data.events as event}
-    <div class="text-sm p-2 border-2 border-blue-300 rounded-md hover:bg-white">
-      <span class="font-bold">{event.date} at {event.time}</span> at 
-      {event.location}
-    </div>
-    {/each}
-  </div>
 </div>
+
 
 <div class="bg-gradient-to-r to-cyan-500 from-blue-500 lg:px-16 px-6 shadow-md py-4 py-2">
   <h4 class="text-3xl font-semibold text-blueGray-700">Collect POAPs at each of our meetups!</h4>
@@ -227,35 +241,7 @@
   </div>
 </div>
 
-<div
-  class="bg-gradient-to-r from-orange-500 to-pink-500 lg:px-16 px-6 shadow-md grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 py-4 py-2"
->
-  <div class="text-white p-2">
-    <img class="rounded-md" src="./community.jpeg"/>
-    <p class="text-xs text-center pb-4">Image by <a href="https://pixabay.com/users/henning_w-327613/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=386673">Henning Westerkamp</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=386673">Pixabay</a></p>
-    The Munich Tech Sauna community is a unique gathering of tech enthusiasts in the beautiful city of Munich, Germany. We come together to unwind and connect, sharing the joy of saunas and great conversations. Our community values a tech-free environment, leaving gadgets and devices at the door, allowing us to focus on what truly matters: human connections.
-  </div>
 
-  <div class="text-white p-2">
-    <img class="rounded-md" src="./diverse.jpeg"/>
-    <p class="text-xs text-center pb-4">Image by Sven Haiges</p>
-    With a warm and inviting atmosphere, we welcome great people from all corners of the tech world who share our passion for relaxation and camaraderie. Our gatherings are characterized by an uplifting mood, where you can leave the stresses of the workday behind and immerse yourself in the soothing ambiance of the sauna.
-  </div>
-
-  <div class="text-white p-2">
-    <img class="rounded-md" src="./beer.jpeg"/>
-    <p class="text-xs text-center  pb-4">Image by Sven Haiges</p>
-    After a rejuvenating sauna session, we often come together for a well-deserved afterwork beer and chill. It's the perfect time to continue those meaningful discussions or simply relax in good company. We also explore various sauna infusions, enhancing the health benefits of the experience and deepening our appreciation for holistic wellness.
-  </div>
-
-  <div class="text-white p-2">
-    <img class="rounded-md" src="./sauna.jpeg"/>
-    <p class="text-xs text-center pb-4">Image by <a href="https://pixabay.com/users/estoniansaunas-8802688/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3350235">EstonianSaunas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3350235">Pixabay</a></p>
-    Join the "Munich Tech Sauna" community to escape the digital hustle, meet like-minded individuals, and nurture your well-being in a friendly and communal setting. It's a place where tech and relaxation come together in harmony.
-
-  </div>
-  
-</div>
 
 <footer class="bg-blueGray-200 pt-8 pb-6 lg:px-16 px-6">
  
