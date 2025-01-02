@@ -63,9 +63,9 @@
         <li class="py-2 lg:py-0">
           <a
             class="text-white hover:pb-4 hover:border-b-4 hover:border-white"
-            href="https://buttondown.email/techsauna"
+            href="https://lu.ma/techsauna"
           >
-            Newsletter
+            Luma Event Calendar
           </a>
         </li>
         <li class="py-2 lg:py-0">
@@ -203,42 +203,6 @@
     ></iframe>
 
   
-</div>
-
-
-<div class="bg-gradient-to-r to-cyan-500 from-blue-500 lg:px-16 px-6 shadow-md py-4 py-2">
-  <h4 class="text-3xl font-semibold text-blueGray-700">Collect POAPs at each of our meetups!</h4>
-  <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3">
-  <div class="mt-2 text-sm">
-    If you want, you can 
-    preserve our amazing experiences with the help of the blockchain. 
-    At each meetup, you will 
-    receive a claim link which allows you to mint a special digital collectible for free.
-    To start collecting, we recommend to install 
-    <a class="text-white" href="https://www.coinbase.com/wallet">Coinbase Wallet</a>, but any Ethereum-based account 
-    will of course work.
-    
-  </div>
-  <div class="mt-2 text-sm">
-    
-    Next, simply come to the next event to start collecting. 
-
-    You will receive a claim link which enables 
-    you to collect the <a class="text-white" href="https://poap.xyz/">POAP</a> after our sauna session.
-    Click on one of the <a class="text-white" href="https://poap.xyz/">POAPs</a> below to see the past meetup collectibles and 
-    all collectors as recorded on the blockchain. 
-  </div>
-
-</div>
-  <div class="mt-4 grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-3 justify-items-center">
-    {#each data.poaps as poap}
-    <div class="text-sm p-2">
-      <a href="https://poap.gallery/event/{poap.event.id}" target="_blank">
-        <img class="w-36 rounded-md shadow-md hover:border-2 border-white" src="{poap.event.image_url}?size=small" />
-      </a>
-    </div>
-    {/each}
-  </div>
 </div>
 
 
