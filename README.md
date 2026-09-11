@@ -11,7 +11,7 @@ The site was exported from [Lovable](https://lovable.dev/projects/2924ab99-ce7d-
 - `public/` — favicon files, web manifest, and the existing custom domain configuration.
 - `docs/` — the complete, pre-rendered website served by GitHub Pages.
 
-GitHub Pages is configured to use **main → /docs**, with `www.techsauna.dev` as its custom domain. The domain currently points to a separate Netlify deployment, so updating GitHub Pages alone does not change the site shown at that domain. The included `netlify.toml` also builds and publishes the static `docs/` output when this repository is connected to Netlify. The earlier Svelte site remains available in Git history.
+GitHub Pages is configured to use **main → /docs**, with `techsauna.dev` as its custom domain. Both `techsauna.dev` and `www.techsauna.dev` resolve to the site. The earlier Svelte site remains available in Git history.
 
 ## Run locally
 
