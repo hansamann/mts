@@ -4,12 +4,6 @@ NO SLIDES</p></div></div></section><section class="section-pad"><div class="shel
 (function injectMerchLinks() {
   var MERCH_URL = "https://techsauna.myspreadshop.de/";
 
-  function mkNavLink() {
-    var li = document.createElement("li");
-    li.innerHTML = '<a href="' + MERCH_URL + '" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold uppercase tracking-[0.05em] text-ink transition-colors hover:text-ink/70">Merch Shop</a>';
-    return li;
-  }
-
   function mkHeroBtn() {
     var a = document.createElement("a");
     a.href = MERCH_URL;
@@ -28,12 +22,6 @@ NO SLIDES</p></div></div></section><section class="section-pad"><div class="shel
   }
 
   function inject() {
-    // Header nav
-    var nav = document.querySelector('nav[aria-label="Community links"] ul');
-    if (nav && !nav.querySelector('a[href="' + MERCH_URL + '"]')) {
-      nav.insertBefore(mkNavLink(), nav.firstChild);
-    }
-
     // Hero buttons
     var heroSection = document.querySelector('section.relative.isolate');
     if (heroSection) {
